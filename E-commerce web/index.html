@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Clone</title>
+  <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/media-query.css">
+</head>
+
+<body>
+  <header>
+  
+  <nav class="mobile-menu" id="mobileMenu">
+  <span class="close" onclick="closeMenu()">×</span>
+  <div class="navCon">
+    <div class="navbar">
+    <a href="index.html"><h3>Amazon Home</h3></a>
+    </div>
+    <div class="navbar">
+      <h3>Trending</h3>
+      <p>Bestsellers</p>
+      <p>New Release</p>
+      <p>Movers and Shankers</p>
+    </div>
+    <div class="navbar">
+      <h3>Top Categories for you</h3>
+      <p>Electronic</p>
+      <p>Home and Kitchen</p>
+      <p>See all categories</p>
+    </div>
+    <div class="navbar">
+      <h3>Program & Features</h3>
+      <p>Today's Deals</p>
+      <p>Amazon Bazaar</p>
+      <p>Amazon Pay</p>
+      <p>Amazon Custom</p>
+      <p>Sell on Amazon</p>
+      <p>Buy more, Save more</p>
+    </div>
+</div>
+  </nav>
+  <div class="main-head">
+    <div class="head">
+      <div class="A">
+      <div class="menu" onclick="openMenu()">☰</div>
+      <img id="image" src="images/amazon logo.png">
+        <p>.in</p>
+      </div>
+      
+      <div class="B">
+      <p id="user-name"></p>  
+      <img id="imglogin" onclick="loginbtn()" src="images/accountsymbol.jpg">
+      <p id="logout" onclick="logout()">LogOut</p>
+      <div class="addshow">
+      <a href="pages/amazon-product.html"><img id="img" src="images/Util logo.png"></a>
+      <p id="add-podt"></p>
+    </div>
+    </div>
+    
+    </div>
+    <div class="inpCon">
+    <div id="newdiv"> 
+    <input type="text" placeholder="Search Amazon.in  " id="input">
+   <img id="search" src="images/search.png">
+    </div>
+    </div>
+  </div>
+    <div class="shopcatgry">
+      <span>Shop By</span>
+      <div class="option">
+      <h3>Category</h3>
+      <h3>Deals</h3>
+      <h3>Sell</h3>
+      <h3>Electronic</h3>
+      <h3>Mobiles</h3>
+      <h3>Clothes</h3>
+      <h3>Laptops</h3>
+      <h3>Kitchen</h3>
+      <h3>Furniture</h3>
+      </div>
+    </div>
+  
+  </header>
+  <div class="overlay"></div> 
+<section class="loginbox">
+  <div class="overlay2"></div>
+   <div class="waiting-box">
+   <div class="wait-img-box">
+     <img src="images/loading-process.png" id="wait-image">
+     <p id="wait-para">Logging in...</p>
+   </div>
+ </div>
+   <div class="upbox">
+    <p id="h2">Login To Amazon
+    <span id="span">&times;</span></p>
+    <input type="tel" id="input1" placeholder="Mobile or phone number">
+    <p id="para1"></p>
+    <input type="password" id="input2" placeholder="Password is required">
+     <img src="images/hideicon.png" id="hidepass1" onclick="showPassword1()">
+    <p id="para2"></p>
+    <button class="button" onclick="login()">Log in</button>
+   
+  <a href="pages/amazon-login-page.html"><button id="account">Create new account </button></a>
+  </div>
+  
+</section>
+
+ <section id="laptops">
+    <h2>Selection These Laptops</h2>
+    <div class="grid"></div>
+    <!--  <div class="box">
+        <img id="laptop" src="./images/app.jpg">
+        <div class="a">
+        <p>Dell Window 11pro</p>
+        <h4>₹49,999</h4>
+        <p>Super fast best quality..</p>
+        <h4>FREE Delivery</h4>
+        <button class="cardbtn" onclick="addPdt()">Add to Card</button>
+        </div>
+      </div> 
+      <div class="box">
+        <img id="laptop" src="./images/lap.jpg">
+        <div class="a">
+        <p>Hp Window 11</p>
+        <h4>₹29,999</h4>
+        <p>Best design and quality..</p>
+        <h4>FREE Delivery</h4>
+        <button class="cardbtn" onclick="addPdt()">Add to Card</button>
+        </div>
+      </div>
+      <div class="box">
+       <img id="laptop" src="./images/laptop.jpg">
+      <div class="a">
+      <p>Lenovo ThinkPad 10</p>
+      <h4>₹44,999</h4>
+      <p>Super fast..</p>
+      <h4>FREE Delivery</h4>
+      <button class="cardbtn" onclick="addPdt()">Add to Card</button>
+     </div>
+    </div>
+    <div class="box">
+   <img id="laptop" src="./images/laptop.png">
+    <div class="a">
+    <p>Hp i5 8th generation</p>
+    <h4>₹39,999</h4>
+    <p>Super fast quality..</p>
+    <h4>FREE Delivery</h4>
+    <button class="cardbtn" onclick="addPdt()">Add to Card</button>
+  </div>
+</div> -->
+</section>
+
+<section id="mobiles">
+ <h2>Selection These Mobiles</h2>
+ <div class="grid"></div>
+<!--<div class="grid">
+      <div class="box">
+        <img id="mobile1" src="./images/oneplusnord.jpg">
+        <div class="a">
+        <p>OnePlus Nord C2 5G</p>
+        <h4>₹39,999</h4>
+        <p>Design by OnePlus</p>
+        <h4>FREE Delivery</h4>
+        <button class="cardbtn" onclick="addPdt()">Add to Card</button>
+        </div>
+      </div> 
+      <div class="box">
+        <img id="mobile2" src="./images/realme.jpg">
+        <div class="a">
+        <p>Realme 10 pro 5G</p>
+        <h4>₹14,999</h4>
+        <p>Design by Realme</p>
+        <h4>FREE Delivery</h4>
+        <button class="cardbtn" onclick="addPdt()">Add to Card</button>
+        </div>
+      </div>
+      <div class="box">
+       <img id="mobile2" src="./images/ultra.jpg">
+      <div class="a">
+      <p>Samsung S24 Ultra</p>
+      <h4>₹1,29,999</h4>
+      <p>Camera best quality..</p>
+      <h4>FREE Delivery</h4>
+      <button class="cardbtn" onclick="addPdt()">Add to Card</button>
+     </div>
+    </div>
+    <div class="box">
+   <img id="mobile1" src="./images/apple.jpg">
+    <div class="a">
+    <p>iPhone 15 </p>
+    <h4>₹59,999</h4>
+    <p>Design by Apple</p>
+    <h4>FREE Delivery</h4>
+    <button class="cardbtn" onclick="addPdt()">Add to Card</button>
+  </div>
+</div>
+</div>-->
+</section>
+
+<section id="deals">
+  <h2>Deals for you</h2>
+  <div class="grid">
+      <div class="box">
+        <img id="dealimg" src="images/galaxy a55.jpg">
+        <div class="a">
+        <p>Galaxy A55 5G</p>
+        <p>Design by Samsung Galaxy</p>
+    <div class="div">  
+  <span id="peroff">75% off</span>
+<span id="dealtime">Limited deal</span>
+ </div>
+      </div> 
+    </div>
+      <div class="box">
+        <img id="dealimg" src="images/earbuds.jpg">
+        <div class="a">
+        <p>Earbuds by BoAt</p>
+        <p>Design by Boat earbuds</p>
+      <div class="div">
+      <span id="peroff">85% off</span>
+      <span id="dealtime">Limited deal</span>
+    </div>
+        </div>
+      </div>
+      <div class="box">
+       <img id="dealimg" src="images/galaxy.jpg">
+      <div class="a">
+      <p>Galaxy S25 Plus 5G</p>
+      <p>Super Zoom Camera Quality</p>
+      <div class="div">
+      <span id="peroff">70% off</span>
+      <span id="dealtime">Limited deal</span>
+    </div>
+     </div>
+    </div>
+    <div class="box">
+   <img id="dealimg" src="images/oneplus.jpg">
+    <div class="a">
+    <p>OnePlus R1x 5G</p>
+    <p>Super Amoled Display</p>
+        <div class="div">
+      <span id="peroff">60% off</span>
+      <span id="dealtime">Limited deal</span>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<section id="deals">
+  <h2>Discover products for you</h2>
+  <div class="grid">
+      <div class="box">
+        <img id="dealimg" src="images/idea pad.jpg">
+        <div class="a">
+        <p>Lenovo IdeaPad</p>
+        <p>Design by Lenovo ThinkPad</p>
+    <div class="div">  
+  <span id="peroff">35% off</span>
+<span id="dealtime">Limited deal</span>
+ </div>
+      </div> 
+    </div>
+      <div class="box">
+        <img id="dealimg" src="images/oneplus earbuds.jpg">
+        <div class="a">
+        <p>Earbuds by OnePlus</p>
+        <p>Design by One earbuds</p>
+      <div class="div">
+      <span id="peroff">65% off</span>
+      <span id="dealtime">Limited deal</span>
+    </div>
+        </div>
+      </div>
+      <div class="box">
+       <img id="dealimg" src="images/poco.jpg">
+      <div class="a">
+      <p>Poco C75 pro 5G</p>
+      <p>Super Zoom Camera Quality</p>
+      <div class="div">
+      <span id="peroff">40% off</span>
+      <span id="dealtime">Limited deal</span>
+    </div>
+     </div>
+    </div>
+    <div class="box">
+   <img id="dealimg" src="images/redmi note.jpg">
+    <div class="a">
+    <p>Redmi Note 15 5G</p>
+    <p>Super Amoled Display</p>
+        <div class="div">
+      <span id="peroff">50% off</span>
+      <span id="dealtime">Limited deal</span>
+    </div>
+  </div>
+</div>
+</div>
+  <div class="grid">
+  
+   <div class="box">
+   <img id="dealimg" src="images/watch.jpg">
+    <div class="a">
+    <p>Foissal LED Watch</p>
+    <p>LED Display full Cover Quality</p>
+        <div class="div">
+      <span id="peroff">60% off</span>
+      <span id="dealtime">Limited deal</span>
+    </div>
+  </div>
+</div>
+
+      <div class="box">
+        <img id="dealimg" src="images/machine.jpg">
+        <div class="a">
+        <p>Washing Machine</p>
+        <p>Design by Electronic Technology</p>
+      <div class="div">
+      <span id="peroff">55% off</span>
+      <span id="dealtime">Limited deal</span>
+         </div>
+        </div>
+      </div>
+      
+      <div class="box">
+       <img id="dealimg" src="images/bag.jpg">
+      <div class="a">
+      <p>Handcare Bag </p>
+      <p>Bag for luggage Quantity</p>
+      <div class="div">
+      <span id="peroff">70% off</span>
+      <span id="dealtime">Limited deal</span>
+    </div>
+     </div>
+    </div>
+    
+   <div class="box">
+        <img id="dealimg" src="images/man.jpg">
+        <div class="a">
+        <p>Man Clothes </p>
+        <p>Unique Shirt by good design</p>
+    <div class="div">  
+  <span id="peroff">25% off</span>
+<span id="dealtime">Limited deal</span>
+    </div>
+    </div> 
+  </div>
+</div>
+</section>
+<div class="line"></div>
+<footer>
+  <div class="foot">
+  <div class="onebox">
+    <p>Amazon Pay</p>
+    <p>Amazon Bazar</p>
+    <p>Amazon Deals</p>
+    <p>Your Account</p>
+    <p>Your Return</p>
+    <p>Sell</p>
+    <p>Help</p>
+  </div>
+  <div class="twobox">
+    <p>Your Order</p>
+    <p>Amazon Live</p>
+    <p>Your Lists</p>
+    <p>Amazon Download App</p>
+    <p>Recently viewed items</p>
+    <p>Our Products</p>
+    <p>Coustomer Service</p>
+  </div>
+</div>
+<div class="foot2">
+  <p>Conditions of use</p>
+  <p>Privacy Notice</p>
+  <p>Interest based ads</p>
+</div>
+<p id="footpara">&#169 1996-2026, Amazon.com, Inc. and its affiliates</p>
+</footer>
+
+<script src="js/script.js"></script> 
+<script src="js/amazon-login-page.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Or Create Account</title>
+  <link rel="stylesheet" href="../css/amazon-login-page.css">
+  <link rel="stylesheet" href="../css/media-query.css">
+</head>
+
+<body>
+
+    <div class="container">
+    <div class="cont">
+       <img id="image" src="../images/amazon logo.png">
+       
+       <p>.in</p>
+    </div>
+    <h3>Create New Account</h3> 
+    <div class="line"></div>
+  <div class="home-page">
+  <div class="page1">
+   <h2>Account Created Successfully !</h2>
+   <a href="../index.html">Back to Amazon Home</a>
+   </div>
+  </div>  
+ <div class="main">
+  <div class="overlay"></div>
+  <div class="waiting-box">
+  <div class="wait-img-box">
+    <img src="../images/loading-process.png" id="wait-image">
+    <p id="wait-para">Please Wait...</p>
+  </div>
+  </div>
+    <input type="text" id="inp1" placeholder="First Name">
+    <p id=para1></p>
+    <br>
+    <input type="text" id="inp2" placeholder="Last Name">
+    <p id="para2"></p>
+    <br>
+    <input type="tel" id="inp3" placeholder="Mobile or phone number">
+    <p id="para3"></p>
+    <br>
+    
+    <input type="password" id="inp4" placeholder="Create a Password">
+    <img src="../images/hideicon.png" id="hidepass" onclick="showPassword()">
+    <p id="para4"></p>
+    <br>
+    <br>
+      <button class="btn" onclick="createAcc()">Continue</button>
+    </div>
+   </div>
+  <script src="../js/amazon-login-page.js"></script>
+
+</body>
+
+</html>

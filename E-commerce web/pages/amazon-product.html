@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Add products</title>
+  <link rel="stylesheet" href="../css/amazon-product.css">
+  <link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/media-query.css">
+</head>
+<body class="body">
+
+<header>
+  <nav class="mobile-menu" id="mobileMenu">
+  <span class="close" onclick="closeMenu()">×</span>
+  <div class="navCon">
+    <div class="navbar">
+    <a href="../index.html"><h3>Amazon Home</h3></a>
+    </div>
+    <div class="navbar">
+      <h3>Trending</h3>
+      <p>Bestsellers</p>
+      <p>New Release</p>
+      <p>Movers and Shankers</p>
+    </div>
+    <div class="navbar">
+      <h3>Top Categories for you</h3>
+      <p>Electronic</p>
+      <p>Home and Kitchen</p>
+      <p>See all categories</p>
+    </div>
+    <div class="navbar">
+      <h3>Program & Features</h3>
+      <p>Today's Deals</p>
+      <p>Amazon Bazaar</p>
+      <p>Amazon Pay</p>
+      <p>Amazon Custom</p>
+      <p>Sell on Amazon</p>
+      <p>Buy more, Save more</p>
+    </div>
+</div>
+  </nav>
+  <div class="main-head">
+    <div class="head">
+      <div class="A">
+      <div class="menu" onclick="openMenu()">☰</div>
+      <img id="image" src="../images/amazon logo.png">
+        <p>.in</p>
+      </div>
+      
+      <div class="B">
+      <p id="user-name"></p>  
+      <img id="imglogin" onclick="loginbtn()" src="../images/accountsymbol.jpg">
+      <img id="img" src="../images/Util logo.png">
+      <p id="add-podt"></p>
+    </div>
+    
+    </div>
+    <div class="inpCon">
+    
+    </div>
+  </div>
+   <!-- <div class="shopcatgry">
+      <span>Shop By</span>
+      <div class="option">
+      <h3>Category</h3>
+      <h3>Deals</h3>
+      <h3>Sell</h3>
+      <h3>Electronic</h3>
+      <h3>Mobiles</h3>
+      <h3>Clothes</h3>
+      <h3>Laptops</h3>
+      <h3>Kitchen</h3>
+      <h3>Furniture</h3>
+      </div>
+    </div> -->
+  
+  </header>
+  
+  <section class="loginbox">
+  
+   <div class="upbox">
+    <p id="h2">Login To Amazon
+    <span id="span">&times;</span></p>
+    <input type="tel" id="input1" placeholder="Mobile or phone number">
+    <p id="para1"></p>
+    <input type="password" id="input2" placeholder="Password is required">
+    <img src="images/hideicon.png" id="hidepass1" onclick="showPassword1()">
+    <p id="para2"></p>
+    <button class="button" onclick="login()">Log in</button>
+   
+  <a href="../pages/amazon-login-page.html"><button id="account">Create new account </button></a>
+  </div>
+  
+</section>
+
+ <div class="overlay"></div>
+  <div class="adddiv">
+  
+  </div>
+  <div>
+    <h2 id="noitem"></h2>
+  </div>
+  
+  <footer>
+  <a href="../index.html"><p class="homeline">Back To Amazon Home</p> </a>
+  <div class="foot">
+  <div class="onebox">
+    <p>Amazon Pay</p>
+    <p>Amazon Bazar</p>
+    <p>Amazon Deals</p>
+    <p>Your Account</p>
+    <p>Your Return</p>
+    <p>Sell</p>
+    <p>Help</p>
+  </div>
+  <div class="twobox">
+    <p>Your Order</p>
+    <p>Amazon Live</p>
+    <p>Your Lists</p>
+    <p>Amazon Download App</p>
+    <p>Recently viewed items</p>
+    <p>Our Products</p>
+    <p>Coustomer Service</p>
+  </div>
+</div>
+<div class="foot2">
+  <p>Conditions of use</p>
+  <p>Privacy Notice</p>
+  <p>Interest based ads</p>
+</div>
+<p id="footpara">&#169 1996-2026, Amazon.com, Inc. and its affiliates</p>
+</footer>
+<script src="../js/script.js"></script>
+<script src="../js/amazon-product.js">
+</script>
+</body>
+
+</html>
